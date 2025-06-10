@@ -298,6 +298,68 @@ section {
     color: var(--accent-blue);
 }
 
+/* Skills Categories */
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-category {
+    background-color: var(--bg-tertiary);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.category-title {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-green);
+    padding-bottom: 0.5rem;
+}
+
+.skill-category .skills {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skill-category .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.8rem;
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    min-width: 70px;
+}
+
+.skill-category .skill-item:hover {
+    transform: translateY(-3px);
+}
+
+.skill-category .skill-item i {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+}
+
+.skill-category .skill-item span {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 /* Experience Section */
 .timeline {
     max-width: 800px;
@@ -574,6 +636,20 @@ section {
     .animated-text {
         height: 1.2em;
         line-height: 1.2;
+    }
+
+    .skills-categories {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skill-category .skills {
+        gap: 0.8rem;
+    }
+    
+    .skill-category .skill-item {
+        min-width: 60px;
+        padding: 0.6rem;
     }
 }
 

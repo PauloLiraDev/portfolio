@@ -69,9 +69,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Download CV function
 function downloadCV() {
-    // You can replace this with actual CV download logic
-    alert('Download do CV iniciado! (Adicione seu arquivo de CV aqui)');
-    // Example: window.open('path/to/your/cv.pdf', '_blank');
+    // Create a temporary link element
+    const link = document.createElement('a');
+    
+    // Set the href to your CV file
+    link.href = 'Paulo-Lira-Desenvolvedor-Back-end-RPA.docx';
+    
+    // Set the download attribute with a user-friendly filename
+    link.download = 'Paulo-Lira-Desenvolvedor-Back-end-RPA.docx';
+    
+    // Add the link to the document temporarily
+    document.body.appendChild(link);
+    
+    // Trigger the download
+    link.click();
+    
+    // Remove the link from the document
+    document.body.removeChild(link);
+    
+    // Optional: Show a success message
+    console.log('Download do CV iniciado!');
 }
 
 // Contact form handling
