@@ -496,7 +496,13 @@ section {
 
 .btn-link {
     color: var(--text-primary);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.url-link {
+    color: var(--text-primary);
+    font-size: 1.0rem;
     transition: color 0.3s ease;
 }
 
