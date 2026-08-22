@@ -278,6 +278,8 @@ section { scroll-margin-top: 84px; }
     color: var(--b1);
 }
 .hero-stats span { font-size: .8rem; color: var(--muted); line-height: 1.35; }
+.hero-stats .stat-wide { min-width: 205px; }
+.hero-stats .stat-wide strong { font-size: 1.24rem; margin-top: 4px; }
 
 /* fluxograma decorativo do hero */
 .hero-flow {
