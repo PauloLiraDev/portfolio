@@ -3,455 +3,533 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Lira</title>
+
+    <title>Paulo Lira | Desenvolvedor Python RPA e Automação de Processos</title>
+    <meta name="description" content="Desenvolvedor Python RPA com 4+ anos de experiência em automação de processos, integrações com APIs REST, BotCity, Selenium, UiPath e SAP. Veja experiência, projetos e contato.">
+    <meta name="author" content="Paulo Cesar de Castro Lira">
+    <link rel="canonical" href="https://paulolira.pages.dev/">
+    <meta name="theme-color" content="#1E40AF">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://paulolira.pages.dev/">
+    <meta property="og:site_name" content="Paulo Lira — Portfólio">
+    <meta property="og:title" content="Paulo Lira | Desenvolvedor Python RPA e Automação de Processos">
+    <meta property="og:description" content="Automação de processos, RPA e integrações com APIs em Python. 4+ anos de experiência, projetos reais e resultados de até 3000% de ganho de eficiência.">
+    <meta property="og:image" content="https://paulolira.pages.dev/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Paulo Lira | Desenvolvedor Python RPA e Automação de Processos">
+    <meta name="twitter:description" content="Automação de processos, RPA e integrações com APIs em Python. 4+ anos de experiência e resultados reais.">
+    <meta name="twitter:image" content="https://paulolira.pages.dev/og-image.png">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Paulo Cesar de Castro Lira",
+      "alternateName": "Paulo Lira",
+      "jobTitle": "Desenvolvedor Python RPA",
+      "description": "Desenvolvedor Python especializado em RPA, automação de processos e integrações com APIs REST.",
+      "url": "https://paulolira.pages.dev/",
+      "email": "mailto:paulocesar_cl@hotmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São José dos Campos",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Descomplica Faculdade Digital"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/paulo-lira-dev/",
+        "https://github.com/PauloLiraDev"
+      ],
+      "knowsAbout": ["Python", "RPA", "Automação de Processos", "APIs REST", "BotCity", "Selenium", "Playwright", "UiPath", "SAP", "SQL", "AWS", "Docker"]
+    }
+    </script>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-brand">
-                <h2>Paulo Lira <span class="animated-text">
-                    <span class="text-item active">RPA</span>
-                    <span class="text-item">Back-end</span>
-                    <span class="text-item">Data</span>
-                    <span class="text-item">Cloud</span>
-                </span></h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#experience" class="nav-link">Experiência</a></li>
-                <li><a href="#projects" class="nav-link">Projetos</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
-                <li><a href="#" class="btn-download" onclick="downloadCV()">
-                    <i class="fas fa-download"></i> CV
-                </a></li>
+    <a class="skip-link" href="#resumo">Pular para o conteúdo</a>
+
+    <header class="header" id="topo">
+        <nav class="navbar" aria-label="Navegação principal">
+            <a class="brand" href="#topo" aria-label="Paulo Lira — início da página">
+                <svg class="brand-glyph" viewBox="0 0 34 24" aria-hidden="true">
+                    <rect x="1.5" y="7" width="12" height="10" rx="5" class="g1"/>
+                    <path d="M13.5 12h7" class="g2"/>
+                    <path d="M18.5 9.5l3 2.5-3 2.5" class="g2"/>
+                    <rect x="21.5" y="7" width="11" height="10" rx="5" class="g3"/>
+                </svg>
+                <span>paulo<b>.lira</b></span>
+            </a>
+
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="menu">
+                <li><a class="nav-link" href="#resumo">Resumo</a></li>
+                <li><a class="nav-link" href="#competencias">Competências</a></li>
+                <li><a class="nav-link" href="#experiencia">Experiência</a></li>
+                <li><a class="nav-link" href="#projetos">Projetos</a></li>
+                <li><a class="nav-link" href="#formacao">Formação</a></li>
+                <li><a class="nav-link" href="#contato">Contato</a></li>
+                <li>
+                    <a class="btn-cv" href="Paulo-Lira-Desenvolvedor-Python-RPA.pdf" download>
+                        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v8.6m0 0L4.8 6.9M8 10.1l3.2-3.2M2.5 13h11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        CV
+                    </a>
+                </li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="container">
+        <!-- ══════════════ HERO ══════════════ -->
+        <section class="hero" aria-label="Apresentação">
+            <svg class="hero-flow" viewBox="0 0 520 480" aria-hidden="true" focusable="false">
+                <g class="float-a">
+                    <rect x="180" y="18" width="150" height="44" rx="22" class="node n1"/>
+                    <text x="255" y="45" class="ntext">início</text>
+                </g>
+                <path d="M255 62v46" class="edge dash"/>
+                <path d="M250 102l5 8 5-8" class="arrow"/>
+                <g class="float-b">
+                    <rect x="150" y="112" width="210" height="52" rx="10" class="node n2"/>
+                    <text x="255" y="143" class="ntext">analisar processo</text>
+                </g>
+                <path d="M255 164v46" class="edge dash"/>
+                <path d="M250 204l5 8 5-8" class="arrow"/>
+                <g class="float-a">
+                    <path d="M255 214l84 52-84 52-84-52z" class="node n3"/>
+                    <text x="255" y="271" class="ntext">automatizável?</text>
+                </g>
+                <path d="M339 266h96" class="edge dash"/>
+                <text x="365" y="256" class="elabel">sim</text>
+                <path d="M427 261l8 5-8 5" class="arrow"/>
+                <g class="float-b">
+                    <rect x="368" y="300" width="134" height="46" rx="10" class="node n2" transform="translate(-72 0)"/>
+                    <text x="363" y="328" class="ntext">bot em python</text>
+                </g>
+                <path d="M171 266h-84" class="edge dash"/>
+                <text x="128 " y="256" class="elabel">não</text>
+                <path d="M95 261l-8 5 8 5" class="arrow"/>
+                <g class="float-a">
+                    <rect x="22" y="300" width="130" height="46" rx="10" class="node n4"/>
+                    <text x="87" y="328" class="ntext">redesenhar</text>
+                </g>
+                <path d="M363 346v44" class="edge dash"/>
+                <path d="M358 384l5 8 5-8" class="arrow"/>
+                <path d="M87 346v44q0 10 10 10h180" class="edge dash"/>
+                <g class="float-b">
+                    <rect x="288" y="408" width="150" height="44" rx="22" class="node n1" transform="translate(-72 0)"/>
+                    <text x="291" y="435" class="ntext">eficiência ↑</text>
+                </g>
+            </svg>
+
+            <div class="container hero-grid">
                 <div class="hero-content">
-                    <h1>Olá, eu sou <span class="highlight">Paulo Lira</span></h1>
-                    <p class="hero-subtitle">Desenvolvedor Back-end e RPA</p>
-                    <p class="hero-description">Criando soluções digitais inovadoras com tecnologias modernas</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                        <a href="#contact" class="btn btn-secondary">Contato</a>
+                    <p class="flow-label reveal">// início do fluxo</p>
+                    <h1 class="reveal" style="--d:.08s">Paulo Lira<span class="h1-sub">Desenvolvedor Python RPA</span></h1>
+                    <p class="hero-lede reveal" style="--d:.16s">
+                        Transformo processos manuais em
+                        <span class="rotator" aria-hidden="true">
+                            <span class="rot-item is-active">automações RPA</span>
+                            <span class="rot-item">integrações com APIs</span>
+                            <span class="rot-item">bots web &amp; desktop</span>
+                            <span class="rot-item">pipelines de dados</span>
+                        </span><span class="sr-only">automações RPA, integrações com APIs, bots web e desktop e pipelines de dados</span>
+                        — com Python, boas práticas e monitoramento de ponta a ponta.
+                    </p>
+                    <div class="hero-actions reveal" style="--d:.24s">
+                        <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+                        <a class="btn btn-ghost" href="Paulo-Lira-Desenvolvedor-Python-RPA.pdf" download>
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v8.6m0 0L4.8 6.9M8 10.1l3.2-3.2M2.5 13h11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Baixar CV
+                        </a>
+                    </div>
+                    <ul class="hero-stats reveal" style="--d:.32s">
+                        <li><strong>4+</strong><span>anos de experiência</span></li>
+                        <li><strong>6.000</strong><span>notas fiscais automatizadas no SAP</span></li>
+                        <li><strong>3000%</strong><span>de ganho de eficiência em processo fiscal</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ RESUMO ══════════════ -->
+        <section id="resumo" class="section">
+            <div class="container">
+                <header class="sec-head reveal">
+                    <span class="sec-step">etapa 01</span>
+                    <h2 class="sec-title">Resumo Profissional</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </header>
+
+                <div class="resumo-grid">
+                    <div class="card resumo-text reveal">
+                        <p>Sou desenvolvedor Python com mais de 4 anos de experiência em <strong>RPA e automação de processos</strong>, atuando em empresas como Riachuelo, Valgroup e T2C Group. Especializado em analisar processos e transformá-los em soluções automatizadas — com <strong>integrações de sistemas, consumo de APIs REST</strong> e automação de aplicações <strong>web e desktop</strong> (BotCity, Selenium, Playwright, UiPath, pywinauto e SAP GUI Scripting).</p>
+                        <p>Tenho sólida vivência com bancos de dados SQL e NoSQL, tratamento de erros, logs e monitoramento, testes e documentação de automações. Graduado em Análise e Desenvolvimento de Sistemas.</p>
+                    </div>
+                    <aside class="card info-node reveal" style="--d:.12s" aria-label="Informações rápidas">
+                        <p class="flow-label">// dados do nó</p>
+                        <ul>
+                            <li>
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14.5s-5-4.1-5-8a5 5 0 0 1 10 0c0 3.9-5 8-5 8z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="8" cy="6.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                                São José dos Campos, SP · atuação remota
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.8" y="3.2" width="12.4" height="9.6" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.4 4.2 8 8.8l5.6-4.6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                                paulocesar_cl@hotmail.com
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 6.5 8 3l6.5 3.5L8 10 1.5 6.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M4 8.2V11c0 .9 1.8 2 4 2s4-1.1 4-2V8.2" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                                Análise e Desenvolvimento de Sistemas
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.5V8l2.6 1.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                                Disponível para novos fluxos
+                            </li>
+                        </ul>
+                        <a class="btn btn-ghost btn-block" href="Paulo-Lira-Desenvolvedor-Python-RPA.pdf" download>
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v8.6m0 0L4.8 6.9M8 10.1l3.2-3.2M2.5 13h11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Currículo em PDF
+                        </a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ COMPETÊNCIAS ══════════════ -->
+        <section id="competencias" class="section section-soft">
+            <div class="container">
+                <header class="sec-head reveal">
+                    <span class="sec-step">etapa 02</span>
+                    <h2 class="sec-title">Competências Técnicas</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </header>
+
+                <div class="skills-grid">
+                    <div class="card skill-card reveal">
+                        <h3><span class="node-dot" aria-hidden="true"></span>Linguagens</h3>
+                        <ul class="chips">
+                            <li>Python</li><li>SQL</li><li>C#</li><li>JavaScript</li><li>Bash</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card reveal" style="--d:.06s">
+                        <h3><span class="node-dot" aria-hidden="true"></span>RPA &amp; Automação</h3>
+                        <ul class="chips">
+                            <li>BotCity</li><li>UiPath</li><li>Selenium</li><li>Playwright</li><li>Power Automate</li><li>pywinauto</li><li>SAP GUI Scripting</li><li>RE-Framework</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card reveal" style="--d:.12s">
+                        <h3><span class="node-dot" aria-hidden="true"></span>Integrações &amp; APIs REST</h3>
+                        <ul class="chips">
+                            <li>Requests</li><li>FastAPI</li><li>Django REST</li><li>Flask</li><li>RabbitMQ</li><li>SAP S/4HANA</li><li>TOTVS</li><li>Salesforce</li><li>Pipefy</li><li>Jira</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card reveal" style="--d:.06s">
+                        <h3><span class="node-dot" aria-hidden="true"></span>Bancos de Dados</h3>
+                        <ul class="chips">
+                            <li>SQL Server</li><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card reveal" style="--d:.12s">
+                        <h3><span class="node-dot" aria-hidden="true"></span>Qualidade &amp; Monitoramento</h3>
+                        <ul class="chips">
+                            <li>Pytest</li><li>Tratamento de erros</li><li>Logs</li><li>Grafana</li><li>Documentação (SDD)</li>
+                        </ul>
+                    </div>
+                    <div class="card skill-card reveal" style="--d:.18s">
+                        <h3><span class="node-dot" aria-hidden="true"></span>DevOps &amp; Cloud</h3>
+                        <ul class="chips">
+                            <li>Git</li><li>GitHub Actions</li><li>GitLab CI/CD</li><li>Docker</li><li>AWS Lambda</li><li>AWS S3</li><li>Step Functions</li><li>EventBridge</li><li>Serverless</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about">
+        <!-- ══════════════ EXPERIÊNCIA ══════════════ -->
+        <section id="experiencia" class="section">
             <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Desenvolvedor Back-end e RPA especializado em Python, C# e automação de processos. Experiência em desenvolvimento web com Django, Flask, FastAPI e .NET, além de automação com UiPath, Selenium e Playwright. Trabalho com bancos de dados relacionais e NoSQL, cloud computing AWS e containerização com Docker.</p>
-                        
-                        <div class="skills-categories">
-                            <div class="skill-category">
-                                <h3 class="category-title">Linguagens</h3>
-                                <div class="skills">
-                                    <div class="skill-item">
-                                        <i class="fab fa-python"></i>
-                                        <span>Python</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-microsoft"></i>
-                                        <span>C#</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-js-square"></i>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-html5"></i>
-                                        <span>HTML</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-css3-alt"></i>
-                                        <span>CSS</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-terminal"></i>
-                                        <span>Bash</span>
-                                    </div>
-                                </div>
-                            </div>
+                <header class="sec-head reveal">
+                    <span class="sec-step">etapa 03</span>
+                    <h2 class="sec-title">Experiência Profissional</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </header>
 
-                            <div class="skill-category">
-                                <h3 class="category-title">Frameworks & Bibliotecas</h3>
-                                <div class="skills">
-                                    <div class="skill-item">
-                                        <i class="fab fa-python"></i>
-                                        <span>Django</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-code"></i>
-                                        <span>Django REST</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-flask"></i>
-                                        <span>Flask</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-rocket"></i>
-                                        <span>FastAPI</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-microsoft"></i>
-                                        <span>.NET</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-bootstrap"></i>
-                                        <span>Bootstrap</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-chart-line"></i>
-                                        <span>Streamlit</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-table"></i>
-                                        <span>Pandas</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-exchange-alt"></i>
-                                        <span>Requests</span>
-                                    </div>
-                                </div>
+                <div class="flow">
+                    <article class="flow-item reveal">
+                        <div class="card">
+                            <div class="job-top">
+                                <h3>Desenvolvedor Back-end &amp; RPA</h3>
+                                <span class="badge badge-atual">jan/2026 – atual</span>
                             </div>
-
-                            <div class="skill-category">
-                                <h3 class="category-title">Bancos de Dados</h3>
-                                <div class="skills">
-                                    <div class="skill-item">
-                                        <i class="fas fa-database"></i>
-                                        <span>SQL</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-database"></i>
-                                        <span>SQLite</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-database"></i>
-                                        <span>MySQL</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-database"></i>
-                                        <span>PostgreSQL</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-leaf"></i>
-                                        <span>MongoDB</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-category">
-                                <h3 class="category-title">Deploy & Cloud</h3>
-                                <div class="skills">
-                                    <div class="skill-item">
-                                        <i class="fab fa-aws"></i>
-                                        <span>AWS</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-aws"></i>
-                                        <span>AWS S3</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-aws"></i>
-                                        <span>AWS Lambda</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-aws"></i>
-                                        <span>AWS EventBridge</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-aws"></i>
-                                        <span>AWS Step Functions</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-server"></i>
-                                        <span>Serverless</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-docker"></i>
-                                        <span>Docker</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-cloud"></i>
-                                        <span>Heroku</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-horse"></i>
-                                        <span>Gunicorn</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-category">
-                                <h3 class="category-title">Ferramentas & RPA</h3>
-                                <div class="skills">
-                                    <div class="skill-item">
-                                        <i class="fab fa-git-alt"></i>
-                                        <span>Git</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-github"></i>
-                                        <span>GitHub</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-gitlab"></i>
-                                        <span>GitLab</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-robot"></i>
-                                        <span>UiPath</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-robot"></i>
-                                        <span>Selenium</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-theater-masks"></i>
-                                        <span>Playwright</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-vial"></i>
-                                        <span>Pytest</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="job-org">Riachuelo · São Paulo, SP (remoto)</p>
+                            <ul class="job-list">
+                                <li>Automação RPA em Python do lançamento de <strong>~6.000 notas fiscais no SAP</strong> (ME21N) com SAP GUI Scripting e pywinauto — de 5–10 minutos para <strong>menos de 1 minuto por nota</strong>.</li>
+                                <li>Persistência de dados em SQLite e integrações com Jira e Organizer Desktop.</li>
+                                <li>Relatórios e alertas operacionais, com logs e monitoramento da execução.</li>
+                            </ul>
                         </div>
-                    </div>
+                    </article>
+
+                    <article class="flow-item reveal">
+                        <div class="card">
+                            <div class="job-top">
+                                <h3>Desenvolvedor Back-end &amp; Hiperautomação</h3>
+                                <span class="badge badge-atual">mar/2025 – atual</span>
+                            </div>
+                            <p class="job-org">FINDES · Vitória, ES (remoto)</p>
+                            <ul class="job-list">
+                                <li>Criação de <strong>RE-Framework customizado</strong> que padroniza tratamento de erros, reprocessamento e logs nas automações.</li>
+                                <li>Sistema de monitoramento das automações com Grafana.</li>
+                                <li>Projetos de hiperautomação com foco em escalabilidade e orquestração de robôs.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="flow-item reveal">
+                        <div class="card">
+                            <div class="job-top">
+                                <h3>Desenvolvedor RPA</h3>
+                                <span class="badge">jul/2025 – out/2025</span>
+                            </div>
+                            <p class="job-org">Valgroup · Lorena, SP (remoto)</p>
+                            <ul class="job-list">
+                                <li>Automação de <strong>4 processos de logística no SAP S/4HANA</strong> com Python, Selenium e BotCity.</li>
+                                <li>Soluções integradas ao Pipefy para orquestração de fluxos de trabalho.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="flow-item reveal">
+                        <div class="card">
+                            <div class="job-top">
+                                <h3>Desenvolvedor Back-end &amp; RPA</h3>
+                                <span class="badge">jul/2024 – mar/2025</span>
+                            </div>
+                            <p class="job-org">T2C Group · Sorocaba, SP</p>
+                            <ul class="job-list">
+                                <li>Soluções RPA escaláveis com BotCity, Selenium e Playwright para automação web e desktop.</li>
+                                <li>Integrações de sistemas com consumo de APIs REST e dados em SQL Server.</li>
+                                <li>Documentação técnica (SDD) e treinamentos internos de UiPath e Power Automate.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="flow-item reveal">
+                        <div class="card">
+                            <div class="job-top">
+                                <h3>Desenvolvedor Back-end</h3>
+                                <span class="badge">mar/2023 – jul/2024</span>
+                            </div>
+                            <p class="job-org">TrackCash · São José dos Campos, SP</p>
+                            <ul class="job-list">
+                                <li>Integração de dados em Python (Requests, Selenium, Pandas) com pipelines ETL e máquinas de estado na AWS (Step Functions, Lambda).</li>
+                                <li>Deploys automatizados com Docker, GitLab CI/CD e Serverless Framework.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="flow-item reveal">
+                        <div class="card">
+                            <div class="job-top">
+                                <h3>Desenvolvedor RPA</h3>
+                                <span class="badge">nov/2021 – nov/2022</span>
+                            </div>
+                            <p class="job-org">Farma Conde · São José dos Campos, SP</p>
+                            <ul class="job-list">
+                                <li>Automações em Python para conciliação de documentos fiscais, elevando a eficiência do processo em <strong>3000%</strong>.</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="experience">
+        <!-- ══════════════ PROJETOS ══════════════ -->
+        <section id="projetos" class="section section-soft">
             <div class="container">
-                <h2 class="section-title">Experiência Profissional</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Desenvolvedor RPA</h3>
-                            <p class="company">Valgroup (Lorena, SP)</p>
-                            <p class="period">Jul 2025 - Atual</p>
-                            <p>Desenvolvimento e sustentação de automações em Python com Selenium e Botcity para o ambiente SAP Web, integração em aplicação interna. </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Desenvolvedor Back-end & Hiperautomações</h3>
-                            <p class="company">FINDES (Vitória, ES)</p>
-                            <p class="period">Mar 2025 - Atual</p>
-                            <p>Desenvolvimento e sustentação de automações em Python com foco em integração de sistemas. Criação do RE-Framework inspirado no UiPath, customizado para FINDES. Desenvolvimento de sistema de monitoramento com Grafana e projetos de hiperautomação com princípios de escalabilidade e orquestração.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Desenvolvedor Back-end & RPA</h3>
-                            <p class="company">T2C Group (Sorocaba, SP)</p>
-                            <p class="period">Jul 2024 - Mar 2025</p>
-                            <p>Desenvolvimento de soluções RPA escaláveis com BotCity, Selenium e Playwright. Integração de APIs modernas e legadas, gerenciamento de dados com SQL Server. Produção de Solution Design Documents (SDD) e treinamento em UiPath e Power Automate.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Desenvolvedor Back-end</h3>
-                            <p class="company">TrackCash (São José dos Campos, SP)</p>
-                            <p class="period">Mar 2023 - Jul 2024</p>
-                            <p>Desenvolvimento de softwares em Python para integração de dados com Selenium, Requests e Pandas. Construção de pipelines ETL, gestão de máquinas de estado (AWS Step Functions) e deploys automatizados com Docker, GitLab CI/CD e Serverless Framework.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Desenvolvedor Back-end RPA</h3>
-                            <p class="company">Farma Conde (São José dos Campos, SP)</p>
-                            <p class="period">Nov 2021 - Nov 2022</p>
-                            <p>Criação de automações voltadas para conciliação de documentos fiscais com objetivo de acelerar recebimento de incentivos. Responsável por aumentar em 3000% a eficiência do processo, trabalhando com Python e outras tecnologias para automação de processos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                
-                <h2 class="section-title">Projetos</h2>
+                <header class="sec-head reveal">
+                    <span class="sec-step">etapa 04</span>
+                    <h2 class="sec-title">Projetos Relevantes</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </header>
 
                 <div class="projects-grid">
+                    <article class="card project-card reveal">
+                        <h3>Concurrent Scraper</h3>
+                        <p>API de web scraping concorrente com FastAPI e Selenium para extrair dados de produtos de forma eficiente.</p>
+                        <ul class="chips chips-sm">
+                            <li>FastAPI</li><li>Selenium</li><li>Docker</li><li>Swagger</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/PauloLiraDev/concurrent_scraper" target="_blank" rel="noopener" aria-label="Concurrent Scraper no GitHub">
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .8a7.2 7.2 0 0 0-2.28 14.03c.36.07.5-.16.5-.35v-1.22c-2 .43-2.43-.97-2.43-.97-.33-.83-.8-1.05-.8-1.05-.66-.45.05-.44.05-.44.72.05 1.1.75 1.1.75.65 1.1 1.7.8 2.1.6.07-.46.26-.79.46-.97-1.6-.18-3.28-.8-3.28-3.56 0-.79.28-1.43.74-1.94-.07-.18-.32-.92.07-1.9 0 0 .6-.2 1.98.74a6.9 6.9 0 0 1 3.6 0c1.38-.94 1.98-.74 1.98-.74.4.98.15 1.72.07 1.9.46.5.74 1.15.74 1.94 0 2.77-1.69 3.38-3.3 3.55.26.23.5.67.5 1.35v2c0 .2.13.42.5.35A7.2 7.2 0 0 0 8 .8z"/></svg>
+                            </a>
+                        </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-spider"></i>
+                    <article class="card project-card reveal" style="--d:.06s">
+                        <h3>MarketSync Bot</h3>
+                        <p>ETL de padronização de dados de marketplaces com testes automatizados e deploy serverless na AWS.</p>
+                        <ul class="chips chips-sm">
+                            <li>Pytest</li><li>MongoDB</li><li>PostgreSQL</li><li>AWS Lambda</li><li>Step Functions</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/PauloLiraDev/bot_marketplace" target="_blank" rel="noopener" aria-label="MarketSync Bot no GitHub">
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .8a7.2 7.2 0 0 0-2.28 14.03c.36.07.5-.16.5-.35v-1.22c-2 .43-2.43-.97-2.43-.97-.33-.83-.8-1.05-.8-1.05-.66-.45.05-.44.05-.44.72.05 1.1.75 1.1.75.65 1.1 1.7.8 2.1.6.07-.46.26-.79.46-.97-1.6-.18-3.28-.8-3.28-3.56 0-.79.28-1.43.74-1.94-.07-.18-.32-.92.07-1.9 0 0 .6-.2 1.98.74a6.9 6.9 0 0 1 3.6 0c1.38-.94 1.98-.74 1.98-.74.4.98.15 1.72.07 1.9.46.5.74 1.15.74 1.94 0 2.77-1.69 3.38-3.3 3.55.26.23.5.67.5 1.35v2c0 .2.13.42.5.35A7.2 7.2 0 0 0 8 .8z"/></svg>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=UbNdEyj0ve8" target="_blank" rel="noopener" aria-label="Demonstração do MarketSync Bot no YouTube">
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M15.3 4.5a1.9 1.9 0 0 0-1.34-1.36C12.78 2.8 8 2.8 8 2.8s-4.78 0-5.96.34A1.9 1.9 0 0 0 .7 4.5 20 20 0 0 0 .37 8c0 1.18.11 2.36.33 3.5a1.9 1.9 0 0 0 1.34 1.36c1.18.34 5.96.34 5.96.34s4.78 0 5.96-.34a1.9 1.9 0 0 0 1.34-1.36A20 20 0 0 0 15.63 8a20 20 0 0 0-.33-3.5zM6.5 10.6V5.4L10.7 8l-4.2 2.6z"/></svg>
+                            </a>
                         </div>
-                        <div class="project-content">
-                            <h3>Concurrent Scraper</h3>
-                            <p>API de web scraping concorrente construída com FastAPI e Selenium para extrair dados de produtos de sites web de forma eficiente</p>
-                            <div class="project-tech">
-                                <span>FastAPI</span>
-                                <span>Selenium</span>
-                                <span>Docker</span>
-                                <span>Docker Compose</span>
-                                <span>Swagger</span>
-                                <span>Concurrent</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/PauloLiraDev/concurrent_scraper" target="_blank" class="btn-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-blog"></i>
+                    <article class="card project-card reveal" style="--d:.12s">
+                        <h3>CL-Assistant</h3>
+                        <p>Biblioteca Python publicada no PyPI: assistente de linha de comando com IA, com CI/CD via GitHub Actions.</p>
+                        <ul class="chips chips-sm">
+                            <li>PyPI</li><li>OpenAI</li><li>GitHub Actions</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://pypi.org/project/cl-assistant/" target="_blank" rel="noopener" aria-label="CL-Assistant no PyPI">
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 1.5h6l2 2v11h-8v-13z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M1.5 5.5h5M1.5 8h5M1.5 10.5h5" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+                            </a>
+                            <a href="https://youtu.be/GZG5cH0Kk90" target="_blank" rel="noopener" aria-label="Demonstração do CL-Assistant no YouTube">
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M15.3 4.5a1.9 1.9 0 0 0-1.34-1.36C12.78 2.8 8 2.8 8 2.8s-4.78 0-5.96.34A1.9 1.9 0 0 0 .7 4.5 20 20 0 0 0 .37 8c0 1.18.11 2.36.33 3.5a1.9 1.9 0 0 0 1.34 1.36c1.18.34 5.96.34 5.96.34s4.78 0 5.96-.34a1.9 1.9 0 0 0 1.34-1.36A20 20 0 0 0 15.63 8a20 20 0 0 0-.33-3.5zM6.5 10.6V5.4L10.7 8l-4.2 2.6z"/></svg>
+                            </a>
                         </div>
-                        
-                        <div class="project-content">
-                            <h3>Top Escolhidos</h3>
-                            <p>Blog de recomendações de produtos com sistema completo de gerenciamento de conteúdo</p>
-                            <div class="project-tech">
-                                <span>Django</span>
-                                <span>Docker</span>
-                                <span>EC2</span>
-                                <span>GitHub Actions</span>
-                                <span>Cloudflare</span>
-                                <span>PostgreSQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://topescolhidos.com.br" target="_blank" class="btn-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-terminal"></i>
+                    <article class="card project-card reveal" style="--d:.06s">
+                        <h3>Top Escolhidos</h3>
+                        <p>Blog de recomendações de produtos com sistema completo de gerenciamento de conteúdo, em produção.</p>
+                        <ul class="chips chips-sm">
+                            <li>Django</li><li>Docker</li><li>EC2</li><li>PostgreSQL</li><li>Cloudflare</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://topescolhidos.com.br" target="_blank" rel="noopener" aria-label="Visitar Top Escolhidos">
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5 13 3m0 0H9.2M13 3v3.8M13 9.5V12a1.5 1.5 0 0 1-1.5 1.5H4A1.5 1.5 0 0 1 2.5 12V4.5A1.5 1.5 0 0 1 4 3h2.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
                         </div>
-                        <div class="project-content">
-                            <h3>CL-Assistant</h3>
-                            <p>Biblioteca oficial da comunidade Python para assistente de linha de comando com IA</p>
-                            <div class="project-tech">
-                                <span>PyPI</span>
-                                <span>Setuptools</span>
-                                <span>OpenAI</span>
-                                <span>GitHub Actions</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://pypi.org/project/cl-assistant/" target="_blank" class="btn-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://youtu.be/GZG5cH0Kk90?si=jAZmwuDNDyIXKDDv" target="_blank" class="btn-link">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-robot"></i>
+                    <article class="card project-card reveal" style="--d:.12s">
+                        <h3>Async MonGoFast</h3>
+                        <p>API assíncrona com FastAPI e MongoDB (Motor), voltada a alta performance e escalabilidade.</p>
+                        <ul class="chips chips-sm">
+                            <li>FastAPI</li><li>Uvicorn</li><li>MongoDB</li><li>Async/Await</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/PauloLiraDev/fastapi-mongodb" target="_blank" rel="noopener" aria-label="Async MonGoFast no GitHub">
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .8a7.2 7.2 0 0 0-2.28 14.03c.36.07.5-.16.5-.35v-1.22c-2 .43-2.43-.97-2.43-.97-.33-.83-.8-1.05-.8-1.05-.66-.45.05-.44.05-.44.72.05 1.1.75 1.1.75.65 1.1 1.7.8 2.1.6.07-.46.26-.79.46-.97-1.6-.18-3.28-.8-3.28-3.56 0-.79.28-1.43.74-1.94-.07-.18-.32-.92.07-1.9 0 0 .6-.2 1.98.74a6.9 6.9 0 0 1 3.6 0c1.38-.94 1.98-.74 1.98-.74.4.98.15 1.72.07 1.9.46.5.74 1.15.74 1.94 0 2.77-1.69 3.38-3.3 3.55.26.23.5.67.5 1.35v2c0 .2.13.42.5.35A7.2 7.2 0 0 0 8 .8z"/></svg>
+                            </a>
                         </div>
-                        <div class="project-content">
-                            <h3>MarketSync Bot</h3>
-                            <p>ETL para padronização de dados de marketplaces com testes e deploy em cloud</p>
-                            <div class="project-tech">
-                                <span>Pytest</span>
-                                <span>MongoDB</span>
-                                <span>PostgreSQL</span>
-                                <span>Docker</span>
-                                <span>AWS Lambda</span>
-                                <span>Step Functions</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/PauloLiraDev/bot_marketplace" target="_blank" class="btn-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.youtube.com/watch?v=UbNdEyj0ve8" target="_blank" class="btn-link">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Async MonGoFast</h3>
-                            <p>API assíncrona com FastAPI e MongoDB para alta performance e escalabilidade</p>
-                            <div class="project-tech">
-                                <span>FastAPI</span>
-                                <span>Uvicorn</span>
-                                <span>MongoDB</span>
-                                <span>Async/Await</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/PauloLiraDev/fastapi-mongodb" target="_blank" class="btn-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <!-- ══════════════ FORMAÇÃO ══════════════ -->
+        <section id="formacao" class="section">
             <div class="container">
-                <h2 class="section-title">Contato</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>paulocesar_cl@hotmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/paulo-lira-dev/" target="_blank" class="url-link">linkedin.com/in/paulo-lira-dev/</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/PauloLiraDev" target="_blank" class="url-link">github.com/PauloLiraDev</a>
-                        </div>
+                <header class="sec-head reveal">
+                    <span class="sec-step">etapa 05</span>
+                    <h2 class="sec-title">Formação Acadêmica</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </header>
+
+                <div class="card edu-card reveal">
+                    <div class="job-top">
+                        <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                        <span class="badge badge-ok">Concluída</span>
                     </div>
-                    <form class="contact-form">
-                        <input type="text" placeholder="Seu Nome" required>
-                        <input type="email" placeholder="Seu Email" required>
-                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                    </form>
+                    <p class="job-org">Descomplica Faculdade Digital · nov/2022 – jun/2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════ CERTIFICAÇÕES ══════════════ -->
+        <section id="certificacoes" class="section section-soft">
+            <div class="container">
+                <header class="sec-head reveal">
+                    <span class="sec-step">etapa 06</span>
+                    <h2 class="sec-title">Certificações e Cursos</h2>
+                    <span class="sec-line" aria-hidden="true"></span>
+                </header>
+
+                <ul class="certs-grid">
+                    <li class="card cert-item reveal"><span class="node-dot" aria-hidden="true"></span><div><strong>Curso Completo de Desenvolvedor RPA com UiPath</strong><span>Udemy · 2022</span></div></li>
+                    <li class="card cert-item reveal" style="--d:.05s"><span class="node-dot" aria-hidden="true"></span><div><strong>Docker para Automações Inteligentes</strong><span>BotCity Academy</span></div></li>
+                    <li class="card cert-item reveal" style="--d:.1s"><span class="node-dot" aria-hidden="true"></span><div><strong>RabbitMQ Training Course</strong><span>CloudAMQP · 2025</span></div></li>
+                    <li class="card cert-item reveal" style="--d:.15s"><span class="node-dot" aria-hidden="true"></span><div><strong>REST API (Intermediate)</strong><span>HackerRank · 2023</span></div></li>
+                    <li class="card cert-item reveal" style="--d:.2s"><span class="node-dot" aria-hidden="true"></span><div><strong>Padrões de Projeto com Python</strong><span>Geek University / Udemy · 2024</span></div></li>
+                    <li class="card cert-item reveal" style="--d:.25s"><span class="node-dot" aria-hidden="true"></span><div><strong>Object-Oriented Developer · 240h</strong><span>Descomplica · 2023</span></div></li>
+                    <li class="card cert-item reveal" style="--d:.3s"><span class="node-dot" aria-hidden="true"></span><div><strong>Problem Solving</strong><span>HackerRank · 2022</span></div></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ══════════════ CONTATO ══════════════ -->
+        <section id="contato" class="section">
+            <div class="container">
+                <div class="card contact-node reveal">
+                    <p class="flow-label">// fim do fluxo → início da conversa</p>
+                    <h2>Vamos automatizar alguma coisa?</h2>
+                    <p class="contact-lede">Estou aberto a oportunidades e projetos de RPA, integrações e back-end em Python. Me chame por onde preferir:</p>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary" href="mailto:paulocesar_cl@hotmail.com">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.8" y="3.2" width="12.4" height="9.6" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.4 4.2 8 8.8l5.6-4.6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                            E-mail
+                        </a>
+                        <a class="btn btn-ghost" href="https://wa.me/5512988189751" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6A6.4 6.4 0 0 0 2.5 11.3L1.7 14.3l3.1-.8A6.4 6.4 0 1 0 8 1.6z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M5.7 5.2c-.2 0-.5.1-.5.6 0 1.9 2.4 4.3 4.6 4.3.5 0 .7-.3.7-.6l-.1-.9-1.3-.5-.6.6C7.6 8.3 6.8 7.5 6.4 6.6l.6-.6-.6-1.2-.7.4z" fill="currentColor" stroke="none"/></svg>
+                            WhatsApp
+                        </a>
+                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/paulo-lira-dev/" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.4 5.9v7.3M3.4 2.7v.1M6.7 13.2V8.9c0-1.7 1-2.9 2.7-2.9s2.9 1.2 2.9 3.2v4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                            LinkedIn
+                        </a>
+                        <a class="btn btn-ghost" href="https://github.com/PauloLiraDev" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .8a7.2 7.2 0 0 0-2.28 14.03c.36.07.5-.16.5-.35v-1.22c-2 .43-2.43-.97-2.43-.97-.33-.83-.8-1.05-.8-1.05-.66-.45.05-.44.05-.44.72.05 1.1.75 1.1.75.65 1.1 1.7.8 2.1.6.07-.46.26-.79.46-.97-1.6-.18-3.28-.8-3.28-3.56 0-.79.28-1.43.74-1.94-.07-.18-.32-.92.07-1.9 0 0 .6-.2 1.98.74a6.9 6.9 0 0 1 3.6 0c1.38-.94 1.98-.74 1.98-.74.4.98.15 1.72.07 1.9.46.5.74 1.15.74 1.94 0 2.77-1.69 3.38-3.3 3.55.26.23.5.67.5 1.35v2c0 .2.13.42.5.35A7.2 7.2 0 0 0 8 .8z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Paulo Lira. Todos os direitos reservados.</p>
+        <div class="container footer-inner">
+            <svg class="brand-glyph" viewBox="0 0 34 24" aria-hidden="true">
+                <rect x="1.5" y="7" width="12" height="10" rx="5" class="g1"/>
+                <path d="M13.5 12h7" class="g2"/>
+                <path d="M18.5 9.5l3 2.5-3 2.5" class="g2"/>
+                <rect x="21.5" y="7" width="11" height="10" rx="5" class="g3"/>
+            </svg>
+            <p>© 2026 Paulo Lira — Desenvolvedor Python RPA. Feito com HTML, CSS e JS puros.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
