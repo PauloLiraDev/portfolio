@@ -672,8 +672,20 @@ html.js .reveal.in { opacity: 1; transform: none; }
 
 @media (max-width: 640px) {
     .section { padding: 62px 0; }
-    .hero { padding: 130px 0 64px; }
-    .hero-flow { display: none; }
+    .hero {
+        padding: 130px 0 64px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .hero-grid { order: 1; }
+    .hero-flow {
+        position: static;
+        order: 2;
+        width: min(calc(100% - 40px), 430px);
+        height: auto;
+        margin: 36px auto 0;
+        opacity: 1;
+    }
     .skills-grid, .projects-grid, .certs-grid { grid-template-columns: 1fr; }
     .sec-head { gap: 12px; }
     .sec-title { font-size: 1.08rem; padding: 8px 18px 8px 32px; white-space: normal; }
