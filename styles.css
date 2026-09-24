@@ -465,6 +465,48 @@ section { scroll-margin-top: 84px; }
 /* duas seções "soft" seguidas dividem uma única linha fina */
 .section-soft + .section-soft { border-top: 0; }
 
+/* destaque do resultado: nó de decisão "aprovado" + nome do perfil em gradiente */
+.perfil-result {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 22px;
+    padding: 30px 34px;
+    border-color: var(--b2-soft);
+    background: linear-gradient(115deg, #fff 40%, var(--tint) 100%);
+    box-shadow: var(--shadow);
+}
+.perfil-result:hover { border-color: var(--b2); }
+.result-glyph { width: 76px; height: 76px; flex: none; }
+.result-glyph .glyph-edge {
+    fill: none;
+    stroke: var(--b2);
+    stroke-width: 1.2;
+    stroke-dasharray: 5 5;
+    opacity: .8;
+    animation: dashmove 1.4s linear infinite;
+}
+.result-glyph .glyph-node { fill: var(--tint); stroke: var(--b1); stroke-width: 1.6; }
+.result-glyph .glyph-check {
+    fill: none;
+    stroke: var(--b2);
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.result-title {
+    width: fit-content;
+    font-size: clamp(1.9rem, 4.2vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -.03em;
+    line-height: 1.1;
+    background: linear-gradient(90deg, var(--b1), var(--b2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.result-lede { margin-top: 8px; color: var(--muted); max-width: 70ch; text-wrap: balance; }
+
 .perfil-grid {
     display: grid;
     grid-template-columns: 1.7fr 1fr;
@@ -847,6 +889,8 @@ html.js .reveal.in { opacity: 1; transform: none; }
     .flow-item::before { left: -28px; }
     .flow-item::after { left: -17px; width: 17px; }
     .job-top { flex-direction: column; align-items: flex-start; }
+    .perfil-result { flex-direction: column; align-items: flex-start; gap: 14px; padding: 24px 22px; }
+    .result-glyph { width: 58px; height: 58px; }
     .perfil-chart { --label-w: 7rem; --val-w: 2.7rem; }
     .trait-name { font-size: .84rem; }
     .rings { gap: 8px; }
